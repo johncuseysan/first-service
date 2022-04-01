@@ -96,7 +96,7 @@ class TestJSON {
 		Json json = new Json();
 		
 		try {
-			CollegeRequest request = json.jsonTOObject("001.json", CollegeRequest.class  );
+			CollegeRequest request = json.jsonTOObject("001_Request.json", CollegeRequest.class  );
 			
 			System.out.println(request.toString());
 			
