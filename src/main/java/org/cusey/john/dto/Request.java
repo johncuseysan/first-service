@@ -1,6 +1,6 @@
 package org.cusey.john.dto;
 
-public class CollegeRequest {
+public class Request {
 	
 	public String departmentName; 	//1 Engineering = E, Humanities = H (Minimun  and Maximum Length = 1) 
 	public String searchStartDate; 	//2 MMDDYYYY

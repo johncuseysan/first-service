@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.cusey.john.components.Json;
-import org.cusey.john.dto.CollegeRequest;
+import org.cusey.john.dto.Request;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -96,7 +96,7 @@ class TestJSON {
 		Json json = new Json();
 		
 		try {
-			CollegeRequest request = json.jsonTOObject("001_Request.json", CollegeRequest.class  );
+			Request request = json.jsonTOObject("001_Request.json", Request.class  );
 			
 			System.out.println(request.toString());
 			
