@@ -60,12 +60,15 @@ public class CustomerRequest {
 		this.passCourse = passCourse;
 	}
 	
+	
 	@Override
 	public String toString() {
-		return "Request [departmentName=" + departmentName + ", searchStartDate=" + searchStartDate + ", searchEndDate="
-				+ searchEndDate + ", courseNumber=" + courseNumber + ", courseCode=" + courseCode + ", studentId="
-				+ studentId + ", transactionId=" + transactionId + ", passCourse=" + passCourse + "]";
+		return "CustomerRequest [departmentName=" + departmentName + ", searchStartDate=" + searchStartDate
+				+ ", searchEndDate=" + searchEndDate + ", courseNumber=" + courseNumber + ", courseCode=" + courseCode
+				+ ", studentId=" + studentId + ", transactionId=" + transactionId + ", passCourse=" + passCourse + "]";
 	}
+	
+
 	
 	
 	

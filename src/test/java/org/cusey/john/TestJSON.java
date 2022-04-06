@@ -7,6 +7,8 @@ import java.io.IOException;
 
 import org.cusey.john.components.Json;
 import org.cusey.john.dto.CustomerRequest;
+import org.cusey.john.dto.Purchase;
+import org.cusey.john.dto.StoreResponse;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -110,8 +112,37 @@ class TestJSON {
 			
 		}catch(IOException e) {
 			System.out.println(e.getMessage() );
-			
 		}
+			
+	}
+		
+		@Test
+		void testResponse() {
+			
+			Json json = new Json();
+			
+			try {
+				StoreResponse response = json.jsonTOObject("RES001.json", StoreResponse.class  );
+				
+				System.out.println(response.toString());
+				
+				for(Purchase element:  response.getProduct()) {
+					System.out.println(element.toString());
+				}
+				
+				assertNotNull(response);
+				
+			}catch(StreamReadException e) {
+				System.out.println(e.getMessage() );
+				
+			}catch(DatabindException e) {
+				System.out.println(e.getMessage() );
+				
+			}catch(IOException e) {
+				System.out.println(e.getMessage() );
+				
+		}
+		
 	
 		
 		

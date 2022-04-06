@@ -40,15 +40,12 @@ public class Header {
 		this.data = data;
 	}
 	
+	
 	@Override
 	public String toString() {
 		return "Header [token=" + token + ", tokenIP=" + tokenIP + ", application=" + application + ", collegeId="
 				+ collegeId + ", data=" + data + "]";
 	}
-	
-
-
-	
 	
 
 }

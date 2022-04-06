@@ -1,0 +1,30 @@
+{
+	"staus":"FC001",							    	
+	"details":"Student Register completed",		    							
+	"count":"13",												
+	"studentId":"3e905fef-03d8-4d8b-995b-9235832acc16",
+	"code":["PC300","PC200"],
+	"product":[
+		 {
+	
+			"cost":"123.50",
+			"period":"201402",
+			"transactionDate":"20120816",
+			"startDate":"20210714",
+			"productType":"T",
+			"productNumber":"123456789",
+			"catolog":"G0",
+			"productCode":"GOI78",
+			"studentId":"67f99418-3b7d-46e1-ae87-9d6052f5cee3 ",
+			"collegeId":"864c1321-553b-47af-805f-095a728964df",
+			"creditCardType":"MASTER",
+			"holdDate":"20220831",
+			"releaseDate":"202109151259",
+			"collegeName":"Fortis Community College",
+			"collegeCatolog":"1234567890123456",
+			"collegeNumber":"123456",
+			"collegeType":"P"
+
+		}
+	]
+}
