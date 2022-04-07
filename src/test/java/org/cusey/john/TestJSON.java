@@ -2,6 +2,7 @@ package org.cusey.john;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 import java.io.File;
 import java.io.IOException;
 
@@ -17,9 +18,10 @@ import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
+import org.cusey.john.components.Constants;
+
 class TestJSON {
-	
-	String path = "C:\\Users\\john\\eclipse-workspace\\first-service\\InputFiles";
 	
 	
 	@Test
@@ -63,7 +65,7 @@ class TestJSON {
 		
 		try {
 			
-			Car car = objectMapper.readValue(new File(path + "\\" + fileName), Car.class);
+			Car car = objectMapper.readValue(new File(Constants.PATH + "\\" + fileName), Car.class);
 			
 			System.out.println(car.toString());
 			
