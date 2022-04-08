@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="FortisSearch" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="Fortis_EndpointCheck">//Mac/AllFiles/Applications/SoapUI-5.6.0.app/Fortis-EndpointCheck-soapui-project.xml</con:project>
+  <con:project name="Fortis_HealthCheck">//Mac/AllFiles/Applications/SoapUI-5.6.0.app/Fortis-HealthCheck-soapui-project.xml</con:project>
+</con:soapui-workspace>
