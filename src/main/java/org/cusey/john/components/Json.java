@@ -8,11 +8,11 @@ import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class Json {
+public final class Json {
 	
 
 
-	public <X> X  jsonTOObject(String resourceName, Class<X> expClass ) throws StreamReadException, DatabindException, IOException {
+	public static <X> X  jsonTOObject(String resourceName, Class<X> expClass ) throws StreamReadException, DatabindException, IOException {
 		
 		ObjectMapper objectMapper = new ObjectMapper();
 		

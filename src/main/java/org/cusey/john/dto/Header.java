@@ -8,6 +8,14 @@ public class Header {
 	public int collegeId;					//4 UUID Format
 	public String data;						//5
 	
+	public void setAll(String token, String tokenIP, String application, int collegeId, String data) {
+
+		this.token = token;
+		this.tokenIP = tokenIP;
+		this.application = application;
+		this.collegeId = collegeId;
+		this.data = data;
+	}
 	
 	public String getToken() {
 		return token;

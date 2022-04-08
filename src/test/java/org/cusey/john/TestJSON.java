@@ -97,10 +97,9 @@ class TestJSON {
 	@Test
 	void testRequest() {
 		
-		Json json = new Json();
 		
 		try {
-			CustomerRequest request = json.jsonTOObject("REQ001.json", CustomerRequest.class  );
+			CustomerRequest request = Json.jsonTOObject("REQ001.json", CustomerRequest.class  );
 			
 			System.out.println(request.toString());
 			
@@ -121,10 +120,9 @@ class TestJSON {
 		@Test
 		void testResponse() {
 			
-			Json json = new Json();
 			
 			try {
-				StoreResponse response = json.jsonTOObject("RES001.json", StoreResponse.class  );
+				StoreResponse response = Json.jsonTOObject("RES001.json", StoreResponse.class  );
 				
 				System.out.println(response.toString());
 				
