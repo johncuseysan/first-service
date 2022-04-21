@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.reactive.function.client.WebClient;
 
 import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.databind.DatabindException;
@@ -20,12 +19,15 @@ import org.cusey.john.components.Json;
 import org.cusey.john.dto.CustomerRequest;
 import org.cusey.john.dto.Header;
 import org.cusey.john.dto.StoreResponse;
-import org.springframework.http.ResponseEntity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/fortis")
 public class FortisController {
+	
+	private static final Logger log = LoggerFactory.getLogger(FortisController.class);
 	
 
 	@Autowired
@@ -50,16 +52,23 @@ public class FortisController {
     		@RequestBody CustomerRequest request,
     		@RequestHeader(name = "TOKEN", required = false, defaultValue = "9") final String token,
     		@RequestHeader(name = "TOKEN_IP", required = false, defaultValue = "9") final String tokenIP,
-    		@RequestHeader(name = "APPLICATION", required = false, defaultValue = "9") final String application,
+    		@RequestHeader(name = "PROJECT_ID", required = false, defaultValue = "9") final int projectId,
     		@RequestHeader(name = "COLLEGE_ID", required = false, defaultValue = "9") final int collegeId,
-    		@RequestHeader(name = "DATA", required = false, defaultValue = "9") final String data
+    		@RequestHeader(name = "DATA", required = false, defaultValue = "9") final String data,
+    		@RequestHeader(name = "TOKEN_AUTH_CODE", required = false, defaultValue = "9") final String tokenAuthCode
     		
     ){
 		
 
 		this.request = request;
-		header.setAll(token, tokenIP, application, collegeId, data);
+		header.setAll(token, tokenIP, collegeId, projectId, data, tokenAuthCode);
 		
+		log.info(request.toString());
+		log.info(header.toString());
+		
+		
+		log.info("data: "+ data );
+
 		try {
 			response = Json.jsonTOObject(header.getData() +".json", StoreResponse.class  );
 		} catch (StreamReadException e) {
