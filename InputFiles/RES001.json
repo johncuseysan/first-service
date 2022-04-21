@@ -1,30 +1,30 @@
 {
 	"staus":"FC001",							    	
-	"details":"Student Register completed",		    							
+	"details":"Student lives in student housing",		    							
 	"count":"13",												
 	"studentId":"3e905fef-03d8-4d8b-995b-9235832acc16",
 	"code":["PC300","PC200"],
 	"product":[
 		 {
 	
-			"cost":"123.50",
-			"period":"201402",
-			"transactionDate":"20120816",
-			"startDate":"20210714",
+			"cost":"13.50",
+			"period":"201309",
+			"transactionDate":"20130816",
+			"startDate":"20230114",
 			"productType":"T",
 			"productNumber":"123456789",
-			"catolog":"G0",
-			"productCode":"GOI78",
-			"studentId":"67f99418-3b7d-46e1-ae87-9d6052f5cee3 ",
-			"collegeId":"864c1321-553b-47af-805f-095a728964df",
-			"creditCardType":"MASTER",
+			"catolog":"FC",
+			"productCode":"FCI78",
+			"studentId":"900eb09e-a9ca-4f19-bc29-88464c63420b",
+			"collegeId":"8cf961e7-9f3b-4586-8321-9f4f84de9ee3",
+			"creditCardType":"VISA",
 			"forwardTo":"APH",
 			"holdDate":"20220831",
-			"releaseDate":"202109151259",
+			"releaseDate":"202008151859",
 			"collegeName":"Fortis Community College",
 			"collegeCatolog":"1234567890123456",
-			"collegeNumber":"123456",
-			"collegeType":"P"
+			"collegeNumber":"234980",
+			"collegeType":"C"
 
 		}
 	]
